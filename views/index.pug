@@ -4,6 +4,8 @@ block title
     | Here is my title
 
 block body
+
+
     h1.title Hello FSWD!                
     p.subtitle This is the #[code index.pug] template
 
@@ -13,4 +15,6 @@ block body
         input(type="text" name="lastName")
         input(type="number" name="inseam")
         button(type="submit") Click me!
-        
+    
+    a(class='button is-small', href='/users/register') Register
+    a(class='button is-small', href='/users/login') Log In
