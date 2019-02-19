@@ -1,0 +1,14 @@
+extends ../layout
+
+block body
+    if error
+        p= error
+    form(method="POST" action="/users/login")
+        .field
+            label.label Username
+            input.input(type="text" name="username")
+        .field
+            label.label Password
+            input.input(type="password" name="password")
+        .control
+            button.button.is-link Submit
